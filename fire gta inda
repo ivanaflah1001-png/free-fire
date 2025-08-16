@@ -1,0 +1,706 @@
+Here's an overview of Free Fire's coding aspects, development technologies, and learning resources based on the search results:
+
+### 1. **Core Game Development Technologies**
+   - **Unity 3D Engine**: Free Fire is built primarily using Unity 3D, with **C#** as the main programming language for gameplay mechanics, physics, and cross-platform deployment .
+   - **Additional Languages**:
+     - **Python**: Used for backend systems, AI behavior (e.g., enemy logic), and server management .
+     - **C++**: Employed for performance-critical components like automated aiming systems and damage calculations (e.g., libraries like AimKill) .
+     - **Java/JavaScript**: Supports Android integration and web-based features (e.g., redeem code systems) .
+
+### 2. **Key Game Mechanics (with Code Examples)**
+   - **Character/Enemy Systems** (Python):
+     ```python
+     class Player:
+         def __init__(self, name):
+             self.name = name
+             self.health = 100
+             self.ammo = 30
+         
+         def shoot(self):
+             if self.ammo >= 10:
+                 self.ammo -= 10
+                 return random.randint(20, 40)  # Damage output
+     ```
+     
+   - **Movement/Physics** (JavaScript/HTML):
+     ```javascript
+     function gameLoop() {
+         birdTop += gravity;  // Gravity effect
+         bird.style.top = birdTop + "px";
+         if (birdTop > 450) gameOver();  // Boundary check
+     }
+     ```
+     
+
+### 3. **Monetization & In-Game Systems**
+   - **Redeem Code Infrastructure**: Web-based redemption portals using **HTML/JavaScript** for user authentication and reward distribution .
+   - **In-App Purchases**: Integrated using platform-specific APIs (e.g., Google Play Billing).
+
+### 4. **Learning Pathways for Aspiring Developers**
+   - **Beginner**:
+     - Start with **HTML/JavaScript** for 2D browser games (e.g., Flappy Bird clone) .
+     - Learn **Python** for text-based battle games .
+   - **Advanced**:
+     - Master **Unity/C#** for 3D multiplayer games.
+     - Study **C++** for optimization-heavy modules .
+   - **Tools**: Use online compilers (e.g., OneCompiler) for practice .
+
+### 5. **Optimization Techniques**
+   - **Low-Device Compatibility**: Achieved through simplified graphics and efficient memory management in Unity .
+   - **Server Scaling**: Python/Java backend systems handle real-time player synchronization .
+
+### Quick Reference Table: Languages in Free Fire
+| **Language** | **Use Case**          | **Example**                     |
+|--------------|-----------------------|---------------------------------|
+| C#           | Core gameplay (Unity) | Character controls, UI systems |
+| Python       | Backend/AI            | Enemy behavior, reward logic   |
+| C++          | Performance modules   | Aim assistance, damage math    |
+| JavaScript   | Web integration       | Redeem code portals            |Here’s an original overview of **Grand Theft Auto V** (GTA V), synthesizing key details from its design, gameplay, and cultural impact:
+
+---
+
+### 🌆 **1. Revolutionary Protagonist System**  
+- **Triple Perspectives**: For the first time in the series, players control three interconnected protagonists:  
+  - **Michael De Santa**: A retired bank robber in witness protection, grappling with family dysfunction.  
+  - **Franklin Clinton**: A young gang member seeking wealth and escape from South Los Santos.  
+  - **Trevor Philips**: A meth-dealing psychopath embodying chaos and dark humor .  
+- **Dynamic Switching**: Seamlessly swap characters during free roam or missions. Each has unique abilities (e.g., Franklin slows time while driving; Trevor deals double damage) .  
+
+---
+
+### 💰 **2. Heist-Centric Narrative**  
+- **Elaborate Robberies**: Missions revolve around high-stakes heists (e.g., jewelry stores, the Union Depository). Players recruit crew members (hackers, drivers, gunmen), whose skills improve if they survive .  
+- **Strategy & Consequence**: Choose between stealthy infiltration or all-out assault, impacting payouts and police response. Money fuels property investments, businesses, and customizations .  
+
+---
+
+### 🌎 **3. Expansive Open World: San Andreas**  
+- **Los Santos & Blaine County**: A fictionalized Southern California spanning 49 square miles, including cities, deserts, mountains, and an underwater ecosystem .  
+- **Living Ecosystem**: NPCs follow daily routines (e.g., gardeners commute by bus; hikers camp on Mount Chiliad). Wildlife includes sharks, deer, and cougars .  
+- **Activities Galore**: Golf, yoga, stock trading, scuba diving, and even a functional in-game internet .  
+
+---
+
+### 🚗 **4. Enhanced Gameplay Mechanics**  
+- **Combat & Driving**: Overhauled shooting mechanics (improved cover system) and vehicle physics for more responsive handling .  
+- **First-Person Mode**: Added in the 2014 re-release, offering immersive perspectives during combat and exploration .  
+- **Wanted System**: Police escalate from patrol cars to SWAT teams based on crime severity. Evade by hiding or changing vehicles .  
+
+---
+
+### 🎮 **5. Grand Theft Auto Online**  
+- **Persistent Multiplayer**: Included with GTA V, supporting 30 players in cooperative heists, races, and free-roam chaos. Expansions like *Cayo Perico* (2020) added new islands and missions .  
+- **Character & Business Customization**: Create personal avatars, purchase properties, and run illicit enterprises (e.g., nightclubs, gunrunning) .  
+
+---
+
+### 🏆 **6. Technical & Cultural Impact**  
+- **Record-Breaking Success**: Earned $1 billion in 3 days. Sold 215+ million copies, making it the **second-best-selling game ever** .  
+- **Satirical Edge**: Mocks modern America—reality TV, corrupt governments, and capitalism—through radio ads, TV shows, and character dialogues .  
+- **Cross-Gen Releases**: Launched on PS3/Xbox 360 (2013), then PS4/Xbox One/PC (2014–2015), and PS5/Xbox Series X|S (2022) with visual upgrades .  
+
+---
+
+### ⚙️ **7. Development Insights**  
+- **Research & Detail**: Developers toured California, capturing 250,000+ photos to recreate landmarks like the Salton Sea. Google Maps aided road design .  
+- **Three-Character Design**: Solved narrative dissonance by assigning traits: Michael (greed), Franklin (ambition), Trevor (chaos) .  
+
+---
+
+### 💎 **Unique Features Table**  
+| **Aspect**         | **Innovation**                                                                 |
+|--------------------|--------------------------------------------------------------------------------|
+| **World Scale**    | 5× larger than *GTA: San Andreas* + *Red Dead Redemption* combined  |
+| **Underwater**     | Fully explorable ocean floor with shipwrecks and hidden treasure     |
+| **Economy**        | Stock market fluctuates based on in-game actions (e.g., sabotaging rivals)  |
+
+---
+
+GTA V redefined open-world gaming by blending biting satire, technical ambition, and unprecedented freedom. Its legacy endures through continuous updates and the upcoming *GTA VI* (2026) . For deeper dives, explore the [GTA Wiki](https://gta.fandom.com) or Rockstar’s official channels.
+
+For full game development guides or redeem code implementation, refer to:
+- [Unity Tutorials](https://learn.unity.com/) (core engine)  # 3D Indian Bike Racing Game
+
+I'll create a simplified 3D bike racing game with Indian-inspired elements using Pygame and PyOpenGL. This game will feature a motorcycle navigating through an Indian-themed environment with obstacles and collectibles.
+
+```python
+import pygame
+import sys
+import math
+import random
+from pygame.locals import *
+from OpenGL.GL import *
+from OpenGL.GLU import *
+
+# Initialize Pygame
+pygame.init()
+WIDTH, HEIGHT = 1000, 700
+screen = pygame.display.set_mode((WIDTH, HEIGHT), DOUBLEBUF | OPENGL)
+pygame.display.set_caption("Indian Bike Racing 3D")
+
+# Set up OpenGL perspective
+gluPerspective(45, (WIDTH/HEIGHT), 0.1, 50.0)
+glTranslatef(0.0, -1.0, -5)
+glRotatef(20, 1, 0, 0)
+
+# Colors
+INDIAN_RED = (205/255, 92/255, 92/255)
+INDIAN_GREEN = (19/255, 136/255, 8/255)
+INDIAN_ORANGE = (255/255, 153/255, 51/255)
+INDIAN_YELLOW = (255/255, 204/255, 0/255)
+SKY_BLUE = (135/255, 206/255, 235/255)
+ROAD_COLOR = (0.2, 0.2, 0.2)
+MARKING_COLOR = (1, 1, 1)
+
+# Game variables
+bike_x = 0
+bike_y = 0
+bike_z = 0
+bike_speed = 0
+bike_lean = 0
+bike_rotation = 0
+score = 0
+game_time = 0
+game_over = False
+paused = False
+
+# Environment objects
+obstacles = []
+collectibles = []
+buildings = []
+trees = []
+lamps = []
+
+# Initialize environment
+def init_environment():
+    global obstacles, collectibles, buildings, trees, lamps
+    
+    # Create obstacles
+    obstacles = []
+    for i in range(20):
+        obstacles.append({
+            'x': random.uniform(-3, 3),
+            'y': 0,
+            'z': random.uniform(-50, -10),
+            'type': random.choice(['rock', 'barrier', 'pothole'])
+        })
+    
+    # Create collectibles (rupee symbols)
+    collectibles = []
+    for i in range(30):
+        collectibles.append({
+            'x': random.uniform(-2.5, 2.5),
+            'y': 0.5,
+            'z': random.uniform(-50, -10),
+            'collected': False
+        })
+    
+    # Create buildings
+    buildings = []
+    for i in range(20):
+        side = random.choice([-1, 1])
+        buildings.append({
+            'x': random.uniform(4, 8) * side,
+            'y': 0,
+            'z': random.uniform(-50, 50),
+            'width': random.uniform(0.5, 1.5),
+            'height': random.uniform(1, 3),
+            'depth': random.uniform(0.5, 1.5),
+            'color': (random.random(), random.random(), random.random())
+        })
+    
+    # Create trees
+    trees = []
+    for i in range(30):
+        side = random.choice([-1, 1])
+        trees.append({
+            'x': random.uniform(3, 5) * side,
+            'y': 0,
+            'z': random.uniform(-50, 50),
+            'height': random.uniform(1.5, 3)
+        })
+    
+    # Create street lamps
+    lamps = []
+    for i in range(20):
+        side = random.choice([-1, 1])
+        lamps.append({
+            'x': 3 * side,
+            'y': 0,
+            'z': i * 5 - 50,
+            'on': random.random() > 0.5
+        })
+
+# Draw a cube
+def draw_cube(x, y, z, width, height, depth, color):
+    w, h, d = width/2, height/2, depth/2
+    vertices = [
+        [x+w, y-h, z+d], [x+w, y+h, z+d], [x-w, y+h, z+d], [x-w, y-h, z+d],
+        [x+w, y-h, z-d], [x+w, y+h, z-d], [x-w, y+h, z-d], [x-w, y-h, z-d]
+    ]
+    
+    edges = [
+        (0,1), (1,2), (2,3), (3,0),
+        (4,5), (5,6), (6,7), (7,4),
+        (0,4), (1,5), (2,6), (3,7)
+    ]
+    
+    faces = [
+        (0,1,2,3), (3,2,6,7), (7,6,5,4),
+        (4,5,1,0), (5,6,2,1), (7,4,0,3)
+    ]
+    
+    glBegin(GL_QUADS)
+    glColor3f(*color)
+    for face in faces:
+        for vertex in face:
+            glVertex3fv(vertices[vertex])
+    glEnd()
+    
+    glBegin(GL_LINES)
+    glColor3f(0,0,0)
+    for edge in edges:
+        for vertex in edge:
+            glVertex3fv(vertices[vertex])
+    glEnd()
+
+# Draw a cylinder
+def draw_cylinder(x, y, z, radius, height, color, slices=16):
+    glPushMatrix()
+    glTranslatef(x, y, z)
+    
+    # Draw the side
+    glBegin(GL_QUAD_STRIP)
+    glColor3f(*color)
+    for i in range(slices + 1):
+        angle = 2 * math.pi * i / slices
+        glVertex3f(radius * math.cos(angle), height/2, radius * math.sin(angle))
+        glVertex3f(radius * math.cos(angle), -height/2, radius * math.sin(angle))
+    glEnd()
+    
+    # Draw the top
+    glBegin(GL_POLYGON)
+    for i in range(slices):
+        angle = 2 * math.pi * i / slices
+        glVertex3f(radius * math.cos(angle), height/2, radius * math.sin(angle))
+    glEnd()
+    
+    # Draw the bottom
+    glBegin(GL_POLYGON)
+    for i in range(slices):
+        angle = 2 * math.pi * i / slices
+        glVertex3f(radius * math.cos(angle), -height/2, radius * math.sin(angle))
+    glEnd()
+    
+    glPopMatrix()
+
+# Draw the motorcycle
+def draw_bike():
+    global bike_x, bike_y, bike_z, bike_lean, bike_rotation
+    
+    glPushMatrix()
+    glTranslatef(bike_x, bike_y, bike_z)
+    glRotatef(bike_rotation, 0, 1, 0)
+    glRotatef(bike_lean, 0, 0, 1)
+    
+    # Main body
+    draw_cube(0, 0.1, 0, 0.8, 0.2, 1.5, INDIAN_RED)
+    
+    # Seat
+    draw_cube(0, 0.2, -0.2, 0.5, 0.1, 0.4, (0.1, 0.1, 0.1))
+    
+    # Engine
+    draw_cube(0, -0.1, 0.3, 0.4, 0.2, 0.4, (0.3, 0.3, 0.3))
+    
+    # Front fork
+    glPushMatrix()
+    glTranslatef(0, 0, 0.7)
+    draw_cube(0, 0.1, 0, 0.1, 0.6, 0.1, (0.5, 0.5, 0.5))
+    
+    # Front wheel
+    draw_cylinder(0, -0.2, 0, 0.3, 0.1, (0.1, 0.1, 0.1))
+    glPopMatrix()
+    
+    # Rear wheel
+    draw_cylinder(0, -0.2, -0.5, 0.3, 0.1, (0.1, 0.1, 0.1))
+    
+    # Handlebar
+    glPushMatrix()
+    glTranslatef(0, 0.2, 0.7)
+    glRotatef(90, 0, 1, 0)
+    draw_cylinder(0, 0, 0, 0.02, 0.6, (0.5, 0.5, 0.5))
+    glPopMatrix()
+    
+    glPopMatrix()
+
+# Draw the road
+def draw_road():
+    glBegin(GL_QUADS)
+    glColor3f(*ROAD_COLOR)
+    glVertex3f(-3, 0, -50)
+    glVertex3f(-3, 0, 50)
+    glVertex3f(3, 0, 50)
+    glVertex3f(3, 0, -50)
+    glEnd()
+    
+    # Road markings
+    for z in range(-50, 50, 2):
+        glBegin(GL_QUADS)
+        glColor3f(*MARKING_COLOR)
+        glVertex3f(-0.2, 0.01, z)
+        glVertex3f(-0.2, 0.01, z+1)
+        glVertex3f(0.2, 0.01, z+1)
+        glVertex3f(0.2, 0.01, z)
+        glEnd()
+
+# Draw rupee collectible
+def draw_rupee(x, y, z):
+    glPushMatrix()
+    glTranslatef(x, y, z)
+    glRotatef(45, 0, 1, 0)
+    
+    # Rupee body
+    glBegin(GL_QUADS)
+    glColor3f(0.0, 0.5, 0.0)  # Green
+    glVertex3f(-0.1, 0.2, 0)
+    glVertex3f(0.1, 0.2, 0)
+    glVertex3f(0.1, -0.2, 0)
+    glVertex3f(-0.1, -0.2, 0)
+    
+    glVertex3f(0, 0.3, 0)
+    glVertex3f(0.1, 0.2, 0)
+    glVertex3f(-0.1, 0.2, 0)
+    glEnd()
+    
+    # Rupee hole
+    glBegin(GL_QUADS)
+    glColor3f(0.1, 0.1, 0.1)  # Dark background
+    glVertex3f(-0.05, 0.1, 0.01)
+    glVertex3f(0.05, 0.1, 0.01)
+    glVertex3f(0.05, -0.1, 0.01)
+    glVertex3f(-0.05, -0.1, 0.01)
+    glEnd()
+    
+    glPopMatrix()
+
+# Draw a tree
+def draw_tree(x, y, z, height):
+    # Trunk
+    draw_cylinder(x, y + height/4, z, 0.1, height/2, (0.55, 0.27, 0.07))
+    
+    # Leaves
+    glPushMatrix()
+    glTranslatef(x, y + height*0.7, z)
+    glColor3f(0.0, 0.5, 0.0)
+    gluSphere(gluNewQuadric(), height/3, 16, 16)
+    glPopMatrix()
+
+# Draw a street lamp
+def draw_street_lamp(x, y, z, on):
+    # Pole
+    draw_cylinder(x, y + 1.5, z, 0.05, 3, (0.5, 0.5, 0.5))
+    
+    # Lamp head
+    draw_cube(x, y + 2.7, z, 0.2, 0.1, 0.2, (0.8, 0.8, 0.8))
+    
+    # Light
+    if on:
+        glPushMatrix()
+        glTranslatef(x, y + 2.5, z)
+        glColor3f(1.0, 1.0, 0.8)
+        gluSphere(gluNewQuadric(), 0.15, 16, 16)
+        glPopMatrix()
+
+# Draw an obstacle
+def draw_obstacle(x, y, z, obs_type):
+    if obs_type == 'rock':
+        glPushMatrix()
+        glTranslatef(x, y, z)
+        glColor3f(0.4, 0.4, 0.4)
+        gluSphere(gluNewQuadric(), 0.3, 16, 16)
+        glPopMatrix()
+    elif obs_type == 'barrier':
+        draw_cube(x, y + 0.2, z, 0.5, 0.4, 0.1, (0.8, 0.8, 0.0))
+    elif obs_type == 'pothole':
+        glPushMatrix()
+        glTranslatef(x, y - 0.1, z)
+        glColor3f(0.1, 0.1, 0.1)
+        gluDisk(gluNewQuadric(), 0, 0.4, 16, 1)
+        glPopMatrix()
+
+# Draw the scene
+def draw_scene():
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
+    glEnable(GL_DEPTH_TEST)
+    
+    # Sky
+    glBegin(GL_QUADS)
+    glColor3f(*SKY_BLUE)
+    glVertex3f(-50, 20, -50)
+    glVertex3f(-50, 20, 50)
+    glVertex3f(50, 20, 50)
+    glVertex3f(50, 20, -50)
+    glEnd()
+    
+    # Ground
+    glBegin(GL_QUADS)
+    glColor3f(0.1, 0.6, 0.1)  # Green ground
+    glVertex3f(-50, 0, -50)
+    glVertex3f(-50, 0, 50)
+    glVertex3f(50, 0, 50)
+    glVertex3f(50, 0, -50)
+    glEnd()
+    
+    # Draw road
+    draw_road()
+    
+    # Draw buildings
+    for building in buildings:
+        draw_cube(building['x'], building['y'] + building['height']/2, building['z'], 
+                building['width'], building['height'], building['depth'], building['color'])
+    
+    # Draw trees
+    for tree in trees:
+        draw_tree(tree['x'], tree['y'], tree['z'], tree['height'])
+    
+    # Draw street lamps
+    for lamp in lamps:
+        draw_street_lamp(lamp['x'], lamp['y'], lamp['z'], lamp['on'])
+    
+    # Draw obstacles
+    for obstacle in obstacles:
+        if obstacle['z'] > bike_z - 20 and obstacle['z'] < bike_z + 20:
+            draw_obstacle(obstacle['x'], obstacle['y'], obstacle['z'], obstacle['type'])
+    
+    # Draw collectibles
+    for collectible in collectibles:
+        if not collectible['collected'] and collectible['z'] > bike_z - 20 and collectible['z'] < bike_z + 20:
+            draw_rupee(collectible['x'], collectible['y'], collectible['z'])
+    
+    # Draw bike
+    draw_bike()
+    
+    # Draw HUD
+    draw_hud()
+
+# Draw HUD (Heads-Up Display)
+def draw_hud():
+    # Switch to 2D orthographic projection
+    glDisable(GL_DEPTH_TEST)
+    glMatrixMode(GL_PROJECTION)
+    glPushMatrix()
+    glLoadIdentity()
+    glOrtho(0, WIDTH, HEIGHT, 0, -1, 1)
+    glMatrixMode(GL_MODELVIEW)
+    glPushMatrix()
+    glLoadIdentity()
+    
+    # Speed display
+    font = pygame.font.SysFont('Arial', 24)
+    speed_text = font.render(f"Speed: {abs(int(bike_speed * 50))} km/h", True, (255, 255, 255))
+    screen.blit(speed_text, (20, 20))
+    
+    # Score display
+    score_text = font.render(f"Score: {score}", True, (255, 255, 255))
+    screen.blit(score_text, (20, 50))
+    
+    # Time display
+    time_text = font.render(f"Time: {int(game_time)}s", True, (255, 255, 255))
+    screen.blit(time_text, (20, 80))
+    
+    # Game over message
+    if game_over:
+        font_large = pygame.font.SysFont('Arial', 48)
+        game_over_text = font_large.render("GAME OVER", True, (255, 0, 0))
+        restart_text = font.render("Press R to Restart", True, (255, 255, 255))
+        screen.blit(game_over_text, (WIDTH//2 - game_over_text.get_width()//2, HEIGHT//2 - 50))
+        screen.blit(restart_text, (WIDTH//2 - restart_text.get_width()//2, HEIGHT//2 + 20))
+    
+    # Paused message
+    if paused:
+        font_large = pygame.font.SysFont('Arial', 48)
+        paused_text = font_large.render("PAUSED", True, (255, 255, 0))
+        screen.blit(paused_text, (WIDTH//2 - paused_text.get_width()//2, HEIGHT//2 - 50))
+    
+    # Instructions
+    font_small = pygame.font.SysFont('Arial', 18)
+    controls = [
+        "Controls:",
+        "Arrow Keys - Move/Steer",
+        "Space - Accelerate",
+        "Left Shift - Brake/Reverse",
+        "P - Pause",
+        "R - Restart"
+    ]
+    
+    for i, text in enumerate(controls):
+        inst = font_small.render(text, True, (200, 200, 200))
+        screen.blit(inst, (WIDTH - inst.get_width() - 20, 20 + i*25))
+    
+    # Switch back to 3D perspective
+    glMatrixMode(GL_PROJECTION)
+    glPopMatrix()
+    glMatrixMode(GL_MODELVIEW)
+    glPopMatrix()
+    glEnable(GL_DEPTH_TEST)
+
+# Check collisions
+def check_collisions():
+    global game_over, score
+    
+    # Check obstacle collisions
+    for obstacle in obstacles:
+        dist = math.sqrt((bike_x - obstacle['x'])**2 + (bike_z - obstacle['z'])**2)
+        if dist < 0.5:
+            game_over = True
+    
+    # Check collectible collisions
+    for collectible in collectibles:
+        if not collectible['collected']:
+            dist = math.sqrt((bike_x - collectible['x'])**2 + (bike_z - collectible['z'])**2)
+            if dist < 0.5:
+                collectible['collected'] = True
+                score += 10
+
+# Move environment based on bike speed
+def move_environment():
+    global bike_z, obstacles, collectibles, buildings, trees, lamps, game_time
+    
+    if not paused and not game_over:
+        # Move bike forward
+        bike_z += bike_speed * 0.1
+        
+        # Move objects toward the bike
+        for obstacle in obstacles:
+            obstacle['z'] += bike_speed * 0.1
+            if obstacle['z'] > 20:
+                obstacle['z'] = random.uniform(-50, -10)
+                obstacle['x'] = random.uniform(-3, 3)
+                obstacle['type'] = random.choice(['rock', 'barrier', 'pothole'])
+        
+        for collectible in collectibles:
+            collectible['z'] += bike_speed * 0.1
+            if collectible['z'] > 20:
+                collectible['z'] = random.uniform(-50, -10)
+                collectible['x'] = random.uniform(-2.5, 2.5)
+                collectible['collected'] = False
+        
+        # Update game time
+        game_time += 0.016  # approx 60 FPS
+
+# Initialize environment
+init_environment()
+
+# Main game loop
+clock = pygame.time.Clock()
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+        
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_r:
+                # Reset game
+                bike_x = 0
+                bike_z = 0
+                bike_speed = 0
+                bike_lean = 0
+                bike_rotation = 0
+                score = 0
+                game_time = 0
+                game_over = False
+                paused = False
+                init_environment()
+            
+            if event.key == pygame.K_p:
+                paused = not paused
+    
+    if not paused and not game_over:
+        # Handle keyboard input
+        keys = pygame.key.get_pressed()
+        
+        # Acceleration
+        if keys[pygame.K_SPACE]:
+            bike_speed = min(bike_speed + 0.01, 0.3)
+        
+        # Braking
+        if keys[pygame.K_LSHIFT]:
+            bike_speed = max(bike_speed - 0.02, -0.15)
+        
+        # Coasting (friction)
+        if not keys[pygame.K_SPACE] and not keys[pygame.K_LSHIFT]:
+            if bike_speed > 0:
+                bike_speed = max(bike_speed - 0.005, 0)
+            elif bike_speed < 0:
+                bike_speed = min(bike_speed + 0.005, 0)
+        
+        # Steering
+        if keys[pygame.K_LEFT]:
+            bike_x = max(bike_x - 0.05, -2.5)
+            bike_lean = min(bike_lean + 3, 20)
+            bike_rotation = min(bike_rotation + 2, 15)
+        elif keys[pygame.K_RIGHT]:
+            bike_x = min(bike_x + 0.05, 2.5)
+            bike_lean = max(bike_lean - 3, -20)
+            bike_rotation = max(bike_rotation - 2, -15)
+        else:
+            # Gradually return to upright position
+            if bike_lean > 0:
+                bike_lean = max(bike_lean - 2, 0)
+            elif bike_lean < 0:
+                bike_lean = min(bike_lean + 2, 0)
+            
+            if bike_rotation > 0:
+                bike_rotation = max(bike_rotation - 1, 0)
+            elif bike_rotation < 0:
+                bike_rotation = min(bike_rotation + 1, 0)
+    
+    # Update environment
+    move_environment()
+    
+    # Check collisions
+    check_collisions()
+    
+    # Draw everything
+    draw_scene()
+    
+    pygame.display.flip()
+    clock.tick(60)
+```
+
+## How to Play the Indian Bike Racing Game
+
+### Game Controls:
+- **Arrow Keys**: Steer the bike left and right
+- **Space**: Accelerate
+- **Left Shift**: Brake/Reverse
+- **P**: Pause/Resume the game
+- **R**: Restart the game
+
+### Game Features:
+1. **3D Motorcycle**: Ride a red Indian-style motorcycle through a 3D environment
+2. **Indian-Themed Environment**: 
+   - Green landscape representing Indian countryside
+   - Colorful buildings alongside the road
+   - Palm trees and street lamps
+3. **Obstacles**: Avoid rocks, barriers, and potholes
+4. **Collectibles**: Collect rupee symbols for points
+5. **HUD Display**: Shows speed, score, and time
+6. **Physics**: Realistic bike leaning and steering
+
+### Game Objective:
+- Navigate through the environment as long as possible without crashing
+- Collect as many rupee symbols as you can to increase your score
+- Your score increases the longer you survive and the more rupees you collect
+
+### Technical Details:
+- Implemented with Pygame and PyOpenGL for 3D graphics
+- Uses simple 3D shapes to create the environment
+- Includes collision detection for obstacles and collectibles
+- Features a heads-up display (HUD) with game information
+- Simulates realistic bike movement physics
+
+The game provides a simplified but enjoyable 3D biking experience with Indian-inspired visuals. The challenge increases as you go faster, requiring quicker reactions to avoid obstacles!
+- [Free Fire Redemption System](https://reward.ff.garena.com) (live example)   
+- [Python Game Code Samples](https://onecompiler.com/python) (learning resource) 
